@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: WebStorageSystemRestApi]
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: cPKGpSGvky
+    database: 0
+    lettuce:
+      pool:
+        max-wait: 1s
+        min-idle: 3
+        max-active: 8
+    timeout: 2s
