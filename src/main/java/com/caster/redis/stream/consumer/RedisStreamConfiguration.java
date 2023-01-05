@@ -95,9 +95,9 @@ public class RedisStreamConfiguration {
             // 群組A
             {
                 // 不自動ack
-                streamMessageListenerContainer.receive(Consumer.from(Constants.group_a, "consumer-a"),
+                streamMessageListenerContainer.receive(Consumer.from(Constants.group_a, "consumer-noAck"),
                         StreamOffset.create(Constants.STREAM_KEY_001, ReadOffset.lastConsumed()),
-                        new AsyncConsumeStreamListener(Constants.groupConsume, Constants.group_a, "consumer-a"));
+                        new AsyncConsumeStreamListener(Constants.groupConsume, Constants.group_a, "consumer-noAck"));
 
                 // 自動 ack
                 streamMessageListenerContainer.receiveAutoAck(Consumer.from(Constants.group_a, "consumer-a"),

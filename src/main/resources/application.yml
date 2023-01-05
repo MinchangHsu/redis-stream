@@ -1,6 +1,6 @@
 spring:
   application:
-    name: WebStorageSystemRestApi]
+    name: WebStorageSystemRestApi
 
   redis:
     host: 127.0.0.1
